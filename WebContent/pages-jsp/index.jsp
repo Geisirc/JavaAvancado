@@ -7,6 +7,34 @@
 	<title>EXECÍCIO 1 - TAG EXPRESSÃO</title>
 </head>
 <body>
+	<h1>Curso de JSP - Trabalhando com TAG EXPRESSÃO</h1>
 	
+		<% String var = "Seu primeiro programa Java"; %>
+		<h2><%= var %></h2>
+	
+		<%  
+		for (int con = 0; con < 9; con++) {
+			 out.print(" Contando: " + con);
+		}	
+		%>
+	
+		<h2>
+		<%  
+		int cont = 0;
+		for (cont = 0; cont <= 10; cont++) {
+			out.print(" "+cont+" ");
+			%><br><%
+		}
+		%>
+		</h2>
+		
+		<h2>
+		<%  
+		int conta = 0;
+		for (conta = 0; conta <= 10; conta++) {
+			out.print(" "+conta+" ");
+		}
+		%>
+		</h2>
 </body>
 </html>
